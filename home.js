@@ -24,9 +24,9 @@
         fan= fan-60;
         jikan = jikan+1;
     }
-      document.cookie = "jcookie=" + jikan + ";SameSite = strict";
-      document.cookie = 'fcookie=' + fan + ";SameSite = strict";
-      document.cookie = 'bcookie=' + byu + ";SameSite = strict";
+      document.cookie = "jcookie=" + jikan + ";max-age=31536000 ;SameSite = strict";
+      document.cookie = 'fcookie=' + fan + ";max-age=31536000 ;SameSite = strict";
+      document.cookie = 'bcookie=' + byu + ";max-age=31536000 ;SameSite = strict";
       console.log(document.cookie);
     }
 
