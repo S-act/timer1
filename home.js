@@ -43,6 +43,13 @@
       gen.innerHTML =String(jikan +"時間" +fan +"分" + byu + "秒");
       console.log(document.cookie);
     }
+    function cntReset(){
+      var tmp = document.cookie;
+      document.cookie = "jcookie=0;max-age=31536000 ;SameSite = strict";
+      document.cookie = "fcookie=0;max-age=31536000 ;SameSite = strict";
+      document.cookie = "bcookie=0;max-age=31536000 ;SameSite = strict";
+      console.log(document.cookie);
+    }
 function cntStart()
 {
   writeCookie();
